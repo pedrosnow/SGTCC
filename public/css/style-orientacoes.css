@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    background: rgb(117, 5, 221);
+    width: 100%;
+    height: 100%;
+}
+#corpo-main{
+    display: flex;
+    flex-direction: column;
+    width: 1100px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 3px 3px 17px black;
+}
+#menu{
+    float: right;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    padding-right: 97px;
+    padding-bottom: 8px;
+}
+#menu a{
+    padding-right: 13px;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px black;
+    font-size: 18px;
+}
+#menu a:hover{
+    color: blue;
+}
+#titulo{
+    float: left;
+    font-size: 17px;
+    text-shadow: 2px 2px 2px black;
+    height: 30px;
+    width: 50%;
+    margin-right: 670px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    width: 100%;
+    height: 100%; 
+    color: #fff;
+    background-color: rgb(77, 5, 145); 
+    padding-top: 40px;
+}
+footer{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: rgb(77, 5, 145);
+    text-shadow: 2px 2px 2px black;
+}
+#cabecalho{
+    width: 1100px;
+    height: 80px;
+}
+#logo-cabecalho{
+    float: right;
+    width: 60px;
+    height: 76px;
+    display: flex;
+    align-items: center; 
+    padding-right: 10px;   
+}
+#titulo-cabecalho{
+    width: 750px;
+    height: 70px;
+    font-size: 28px;
+    text-shadow: 1px 1px 4px black;
+    text-align: right;
+    padding-top: 10px;
+}
+#declaracoes{
+    float: right;
+    width: 65%;
+    height: 95px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+#logo-estacio{
+    float: left;
+    width: 180px;
+    height: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#grupo-input-orientacao{
+    float: left;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+.inputs-orientacao{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 50px;
+    width: 100%; 
+}
+.input-orientacao{
+    width: 400px;
+    height: 23px;
+}
+.button{ 
+    height: 30px;
+    width: 50%;
+    margin-left: 265px;
+ }
+#orientacao{
+    height: 300px;
+}
+#form-orientacao{
+    width: 100%;
+}
+#botao{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(0, 217, 255);
+}

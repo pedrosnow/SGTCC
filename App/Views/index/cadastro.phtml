@@ -1,0 +1,25 @@
+<section id="body-cadastro">
+    <?php if(isset($_GET['sucesso'])){ ?>
+        <div id="status-sucesso-cadastro">Cadastrado com <strong>Sucesso</strong></div>
+    <?php } ?>
+    <?php if(isset($_GET['erro'])){ ?>
+        <div id="status-sucesso-erro"><strong>Erro ao Cadastrar!</strong>   -    Verifique os Campos</div>
+    <?php } ?>
+<form id="form-cadastro" action="/cadastrando" method="post">
+    <label>
+        Usuario:
+        <input type="text" name="Usuario">
+    </label>
+    <br>
+    <label>
+       Senha:
+        <input type="password" name="Senha">
+    </label>
+    <button id="btn-cadastrar">Cadastrar</button>
+    <br>
+    <a href="/">Voltar</a>
+</form>
+
+
+
+</section>

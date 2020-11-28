@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    background: rgb(117, 5, 221);
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+#body-estrutura{
+    width: 100%;
+    height: 1180px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+#corpo-pri{
+    display: flex;
+    flex-direction: column;
+    width: 1100px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 3px 3px 17px black;
+}
+#menu{
+    float: right;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    padding-right: 97px;
+    padding-bottom: 8px;
+}
+#menu a{
+    padding-right: 13px;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px black;
+    font-size: 18px;
+}
+#menu a:hover{
+    color: blue;
+}
+#titulo{
+    float: left;
+    font-size: 17px;
+    text-shadow: 2px 2px 2px black;
+    height: 30px;
+    width: 50%;
+    margin-right: 670px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    width: 100%;
+    height: 100%; 
+    color: #fff;
+    background-color: rgb(77, 5, 145); 
+}
+#footer{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: rgb(77, 5, 145);
+    text-shadow: 2px 2px 2px black;
+}
+#cabecalho{
+    width: 1100px;
+    height: 80px;
+}
+#logo-cabecalho{
+    float: right;
+    width: 60px;
+    height: 76px;
+    display: flex;
+    align-items: center; 
+    padding-right: 10px;   
+}
+#titulo-cabecalho{
+    width: 760px;
+    height: 70px;
+    font-size: 28px;
+    text-shadow: 1px 1px 4px black;
+    text-align: right;
+    padding-top: 10px;
+}
+#declaracoes{
+    float: right;
+    width: 65%;
+    height: 95px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+#logo-estacio{
+    float: left;
+    width: 180px;
+    height: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttao{
+    width: 500px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 280px;
+}
+#resumo{
+    width: 100%;
+    height: 100px;
+   
+}
+#introducao{
+    width: 100%;
+    height: 100px;
+}
+#referencial{
+    width: 100%;
+    height: 100px;
+}
+#metodologia{
+    width: 100%;
+    height: 100px;
+}
+#analise{
+    width: 100%;
+    height: 100px;
+}
+#conclusoes{
+    width: 100%;
+    height: 100px;
+}
+#referencias{
+    width: 100%;
+    height: 100px;
+}
+.label{
+    padding-left: 20px;
+    font-size: 20px;
+    color:blue;
+}
+
+#status-erro{
+
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    padding: 13px;
+    width: 300px;
+    border-radius: 4px;
+    position: absolute;
+
+}
+#status-sucesso{
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    padding: 13px;
+    width: 300px;
+    border-radius: 4px;
+    position: absolute;
+}

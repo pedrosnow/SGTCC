@@ -1,0 +1,123 @@
+<header>
+        <div id="titulo">
+            <h3>Estrutura do TCC</h3>
+            <hr width="350px">
+        </div>
+        <div id="menu">
+            <a href="/home">Home</a>
+            <a href="/orientacoes">Orientações</a>
+            <a href="/sair">Sair</a>
+        </div>
+        
+    </header>
+    <div id="body-estrutura">
+        
+        <div id="corpo-pri">
+            <div id="cabecalho">
+                <div id="logo-cabecalho">
+                    <img src="/img/tcc.jpg" width="50px" height="50px">
+                </div>
+                <div id="titulo-cabecalho">
+                    Estrutura do Trabalho de Conclusão
+                </div>
+                <hr color="blue">
+            </div>
+            <br>
+            <?php if(isset($_GET['erro'])){ ?>
+                <div id="status-erro"><strong>Erro</strong> - Campo Não Preenchido</div>
+            <?php } ?>
+            <?php if(isset($_GET['sucesso'])){ ?>
+                <div id="status-sucesso"><strong>Salvo</strong> com Sucesso</div>
+            <?php } ?>
+            <form action="/saveEstrutura" method="post">
+                <div id="resumo">
+                    <label class="label">Resumo</label>
+                    <?php if(isset($_GET['resumo'])){  ?> 
+                        <textarea name="resumo" id="resumo" cols="30" rows="10"><?= $_GET['resumo'] ?></textarea>
+                    <?php }else{ ?>
+                        <textarea name="resumo" id="resumo" cols="30" rows="10"></textarea>
+                        <?php } ?>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div id="introducao">
+                    <label class="label">Introdução</label>
+                    <?php if(isset($_GET['introducao'])){  ?> 
+                        <textarea name="introducao" id="introducao" cols="30" rows="10"><?= $_GET['introducao'] ?></textarea>
+                    <?php }else{ ?>
+                        <textarea name="introducao" id="introducao" cols="30" rows="10"></textarea>
+                        <?php } ?>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div id="referencial">
+                    <label class="label">Referencial Teórico</label>                    
+                    <?php if(isset($_GET['referencial'])){  ?> 
+                        <textarea name="referencial" id="referencial" cols="30" rows="10"><?= $_GET['referencial'] ?></textarea>
+                    <?php }else{ ?>
+                        <textarea name="referencial" id="referencial" cols="30" rows="10"></textarea>
+                        <?php } ?>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div id="metodologia">
+                    <label class="label">Metodologia de Pesquisa</label>
+                    <?php if(isset($_GET['metodologia'])){  ?> 
+                        <textarea name="metodologia" id="metodologia" cols="30" rows="10"><?= $_GET['metodologia'] ?></textarea>
+                    <?php }else{ ?>
+                        <textarea name="metodologia" id="metodologia" cols="30" rows="10"></textarea>
+                        <?php } ?>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div id="analise">
+                    <label class="label">Análises e Resultados</label>
+                    <?php if(isset($_GET['analise'])){  ?> 
+                        <textarea name="analise" id="analise" cols="30" rows="10"><?= $_GET['analise'] ?></textarea>
+                    <?php }else{ ?>
+                        <textarea name="analise" id="analise" cols="30" rows="10"></textarea>
+                        <?php } ?> 
+                </div>
+                <br>
+                <br>
+                <br>
+                <div id="conclusoes">
+                    <label class="label">Conclusões</label>
+                    <?php if(isset($_GET['conclusoes'])){  ?> 
+                        <textarea name="conclusoes" id="conclusoes" cols="30" rows="10"><?= $_GET['conclusoes'] ?></textarea>
+                    <?php }else{ ?>
+                        <textarea name="conclusoes" id="conclusoes" cols="30" rows="10"></textarea>
+                        <?php } ?>  
+                </div>
+                <br>
+                <br>
+                <br>
+                <div id="referencias">
+                    <label class="label">Referências Bibliograficas</label>
+                    <?php if(isset($_GET['referencias'])){  ?> 
+                        <textarea name="referencias" id="referencias" cols="30" rows="10"><?= $_GET['referencias'] ?></textarea>
+                    <?php }else{ ?>
+                        <textarea name="referencias" id="referencias" cols="30" rows="10"></textarea>
+                        <?php } ?> 
+                </div>
+                    <button class="buttao">Salvar</button>
+                  
+            </form>
+        </div>
+    </div>
+    
+    <footer id="footer">
+        <div id="declaracoes">
+            Sistema de Gerenciamento de Conclusão de Curso-TCC I e II <br>
+            Gestão e Orientação de Qualidade <br>
+            Contato: (086)999999999 <br>
+            E-mail: estacio@estacio.br
+        </div>
+        <div id="logo-estacio">
+            <img src="/img/estacio.png" width="140px" height="90px">
+        </div>
+    </footer>
